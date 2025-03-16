@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Angilletti | Odontoiatria d'Eccellenza a Comiso</title>
+    <!-- Collegamenti ai file CSS esterni -->
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con effetto trasparente -->
+    <header class="header-transparent">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <div class="logo-text">Studio Angilletti</div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Trattamenti</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#team">Il Team</a></li>
+                    <li><a href="#testimonials">Testimonial</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Video Background -->
+    <section id="home" class="hero">
+        <div class="video-background">
+            <video autoplay muted loop id="hero-video">
+                <source src="video-studio-dentistico.mp4" type="video/mp4">
+                <!-- Fallback per browser che non supportano video -->
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Il sorriso che hai sempre desiderato</h1>
+            <p>Tecnologia all'avanguardia, competenza ed esperienza al servizio del tuo benessere dentale. Studio Angilletti, l'eccellenza odontoiatrica a Comiso.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Prenota una visita</a>
+                <a href="#services" class="btn btn-secondary">Scopri i trattamenti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">I nostri trattamenti</span>
+                <h2 class="section-title">Soluzioni Odontoiatriche Complete</h2>
+                <p class="section-description">Offriamo un'ampia gamma di trattamenti dentali all'avanguardia per garantire la salute e la bellezza del tuo sorriso, utilizzando solo le migliori tecnologie e materiali.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-teeth"></i>
+                        </div>
+                        <h3 class="service-title">Odontoiatria Generale</h3>
+                        <p class="service-description">Prevenzione, diagnosi e trattamento delle patologie orali più comuni con un approccio attento e professionale.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3 class="service-title">Implantologia</h3>
+                        <p class="service-description">Sostituzione di denti mancanti con impianti di alta qualità per una soluzione permanente e naturale.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3 class="service-title">Estetica Dentale</h3>
+                        <p class="service-description">Migliora l'aspetto del tuo sorriso con faccette, sbiancamento e altri trattamenti estetici personalizzati.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-teeth-open"></i>
+                        </div>
+                        <h3 class="service-title">Ortodonzia</h3>
+                        <p class="service-description">Allineamento dentale con apparecchi tradizionali o trasparenti, adatti a pazienti di tutte le età.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3 class="service-title">Odontoiatria Pediatrica</h3>
+                        <p class="service-description">Cure dentali specifiche per i più piccoli in un ambiente accogliente e rassicurante.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h3 class="service-title">Chirurgia Orale</h3>
+                        <p class="service-description">Interventi chirurgici con tecniche mini-invasive e tempi di recupero ridotti per problematiche complesse.</p>
+                        <a href="#" class="service-link">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="/api/placeholder/600/800" alt="Studio Dentistico Angilletti">
+                    <div class="about-image-overlay">
+                        <div class="experience-years">25+</div>
+                        <div class="overlay-text">Anni di esperienza</div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Centro di Eccellenza Dentale a Comiso</h2>
+                    <p class="about-text">Lo Studio Dentistico Angilletti rappresenta un punto di riferimento per l'odontoiatria di qualità a Comiso e in tutta la provincia di Ragusa. Fondato dal Dott. Roberto Angilletti, il nostro centro combina competenza, tecnologia all'avanguardia e un'attenzione particolare al paziente.</p>
+                    <p class="about-text">La nostra filosofia si basa sulla prevenzione, l'ascolto e il trattamento personalizzato. Crediamo che ogni paziente sia unico e meriti un piano di cura specifico, costruito sulle sue esigenze e aspettative.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">Tecnologia digitale avanzata</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">Materiali di prima qualità</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">Team multidisciplinare</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-text">Ambiente confortevole</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Contattaci</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">I nostri specialisti</span>
+                <h2 class="section-title">Un Team di Professionisti</h2>
+                <p class="section-description">Il nostro team è composto da professionisti altamente qualificati, ognuno specializzato in un particolare campo dell'odontoiatria, per garantirti le migliori cure possibili.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/api/placeholder/400/400" alt="Dott. Roberto Angilletti">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dott. Roberto Angilletti</h3>
+                        <p class="team-role">Direttore Clinico</p>
+                        <p class="team-bio">Fondatore dello studio, con oltre 25 anni di esperienza in odontoiatria. Specializzato in implantologia e riabilitazione orale complessa.</p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/api/placeholder/400/400" alt="Dott.ssa Giulia Romano">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dott.ssa Giulia Romano</h3>
+                        <p class="team-role">Ortodontista</p>
+                        <p class="team-bio">Esperta in ortodonzia invisibile e trattamenti pediatrici, si dedica a creare sorrisi perfetti per pazienti di tutte le età.</p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/api/placeholder/400/400" alt="Dott. Marco Vitale">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Dott. Marco Vitale</h3>
+                        <p class="team-role">Chirurgo Orale</p>
+                        <p class="team-bio">Specialista in chirurgia orale e parodontologia, con un approccio minimalista per garantire interventi efficaci e poco invasivi.</p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="/api/placeholder/400/400" alt="Silvia Messina">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Silvia Messina</h3>
+                        <p class="team-role">Igienista Dentale</p>
+                        <p class="team-bio">Professionista dedicata alla prevenzione e all'educazione dei pazienti per una corretta igiene orale quotidiana.</p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Cosa dicono i pazienti</span>
+                <h2 class="section-title">Testimonianze</h2>
+                <p class="section-description">Scopri le esperienze di chi si è già affidato alle cure del nostro studio dentistico.</p>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="/api/placeholder/200/200" alt="Maria C.">
+                        </div>
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">Dopo anni di paura del dentista, ho trovato nello Studio Angilletti un ambiente accogliente e professionale. Il Dott. Angilletti ha risolto i miei problemi dentali con grande competenza e umanità.</p>
+                            <h4 class="testimonial-author">Maria C.</h4>
+                            <p class="testimonial-role">Paziente dal 2019</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-navigation">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                    <div class="slider-dot"></div>
+                </div>
+                <div class="slider-arrows">
+                    <div class="slider-arrow prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slider-arrow next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Prenota una visita</span>
+                <h2 class="section-title">Contattaci</h2>
+                <p class="section-description">Siamo a tua disposizione per qualsiasi informazione o per fissare un appuntamento.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-title">Informazioni di Contatto</h3>
+                    <p class="contact-text">Puoi raggiungerci facilmente nel centro di Comiso. Siamo disponibili per appuntamenti dal lunedì al sabato.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Indirizzo</h4>
+                            <p>Via Roma 123, 97013 Comiso (RG)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Telefono</h4>
+                            <p>+39 0932 123456</p>
+                            <p>+39 333 1234567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>info@studioangilletti.it</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Orari</h4>
+                            <p>Lunedì - Venerdì: 9:00 - 19:00</p>
+                            <p>Sabato: 9:00 - 13:00</p>
+                            <p>Domenica: Chiuso</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome e Cognome</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefono</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">Servizio Richiesto</label>
+                            <select id="service" class="form-control" required>
+                                <option value="" disabled selected>Seleziona un servizio</option>
+                                <option value="checkup">Visita di controllo</option>
+                                <option value="cleaning">Igiene dentale</option>
+                                <option value="whitening">Sbiancamento</option>
+                                <option value="implants">Implantologia</option>
+                                <option value="orthodontics">Ortodonzia</option>
+                                <option value="other">Altro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Messaggio</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div>
+                    <div class="footer-logo">
+                        <i class="fas fa-tooth"></i> Studio Angilletti
+                    </div>
+                    <p class="footer-about">
+                        Il tuo sorriso è la nostra priorità. Da oltre 25 anni al servizio del benessere dentale a Comiso e provincia.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Link Utili</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Trattamenti</a></li>
+                        <li><a href="#about">Chi Siamo</a></li>
+                        <li><a href="#team">Il Team</a></li>
+                        <li><a href="#contact">Contatti</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Servizi</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Odontoiatria Generale</a></li>
+                        <li><a href="#">Implantologia</a></li>
+                        <li><a href="#">Estetica Dentale</a></li>
+                        <li><a href="#">Ortodonzia</a></li>
+                        <li><a href="#">Odontoiatria Pediatrica</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Orari</h3>
+                    <ul class="footer-links">
+                        <li>Lunedì - Venerdì: 9:00 - 19:00</li>
+                        <li>Sabato: 9:00 - 13:00</li>
+                        <li>Domenica: Chiuso</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Studio Dentistico Angilletti. Tutti i diritti riservati. <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/script.js" type="text/javascript"></script>
+</body>
+</html>
