@@ -159,14 +159,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inizializza il carosello testimonianze
     showSlide(0);
     
-    // Animazione per le card dei servizi
+    // Animazione per le card dei servizi e chi siamo
     const serviceCards = document.querySelectorAll('.service-card');
+    const chiSiamoCards = document.querySelectorAll('.chi-siamo-card');
+    
     if (serviceCards.length > 0) {
         serviceCards.forEach((card, index) => {
             setTimeout(() => {
                 card.style.opacity = '1';
                 card.style.transform = 'translateY(0)';
             }, 100 * index);
+        });
+    }
+    
+    if (chiSiamoCards.length > 0) {
+        chiSiamoCards.forEach((card, index) => {
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 150 * index);
         });
     }
 });
@@ -188,11 +199,28 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Osserva elementi per animazioni allo scroll
-document.querySelectorAll('.about-image, .about-content, .team-card, .technology-item').forEach(el => {
+document.querySelectorAll('.about-image, .about-content, .team-card, .technology-item, .chi-siamo-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
+});
+
+// Effetto parallasse per il video di "Chi Siamo"
+window.addEventListener('scroll', () => {
+    const chiSiamoSection = document.getElementById('chi-siamo');
+    if (chiSiamoSection) {
+        const teamVideo = document.getElementById('team-video');
+        const scrollPosition = window.scrollY;
+        const chiSiamoPosition = chiSiamoSection.offsetTop;
+        
+        // Calcolo della posizione per l'effetto parallasse
+        if (scrollPosition > chiSiamoPosition - window.innerHeight && 
+            scrollPosition < chiSiamoPosition + chiSiamoSection.offsetHeight) {
+            const parallaxValue = (scrollPosition - (chiSiamoPosition - window.innerHeight)) * 0.15;
+            teamVideo.style.transform = `translateX(-50%) translateY(calc(-50% + ${parallaxValue}px))`;
+        }
+    }
 });
 
 // Aggiunge la classe in-view agli elementi quando appaiono nel viewport
